@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/listviewatten"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E2D1F9"
+    tools:context=".studentsdetails">
+
+    <TextView
+        android:id="@+id/sdwel"
+        android:layout_width="282dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="4dp"
+        android:background="#FFAB00"
+        android:text="Students Details"
+        android:textAlignment="center"
+        android:textColor="#317773"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    <ProgressBar-->
+<!--        android:id="@+id/progressbar"-->
+<!--        style="?android:attr/progressBarStyle"-->
+<!--        android:layout_width="97dp"-->
+<!--        android:layout_height="78dp"-->
+<!--        android:layout_marginTop="252dp"-->
+<!--        android:background="#000000"-->
+<!--        android:clickable="false"-->
+<!--        android:hapticFeedbackEnabled="false"-->
+<!--        android:indeterminate="false"-->
+<!--        android:textAlignment="center"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.726"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <ListView
+        android:id="@+id/myListView"
+        android:layout_width="261dp"
+        android:layout_height="642dp"
+        android:layout_marginTop="26dp"
+        android:background="#FFFFFF"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sdwel"
+        app:layout_constraintVertical_bias="1.0">
+
+
+    </ListView>
+
+    <ListView
+        android:id="@+id/listviewattendence"
+        android:layout_width="129dp"
+        android:layout_height="642dp"
+        android:layout_marginStart="265dp"
+        android:background="#F8F4F4"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.176"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Inverse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#7C7977"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="63dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="6dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="NAMES"
+        android:textAlignment="center"
+        android:textColor="#AD1457"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/myListView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sdwel" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="7dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="ATTENDANCE %"
+        android:textAlignment="center"
+        android:textColor="#AD1457"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/listviewattendence"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.785"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/sdwel"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
