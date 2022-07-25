@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bb3"
+    tools:context=".SplashscreenActivity">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="341dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="92dp"
+        android:background="#F0F4C3"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Learning Management System"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="LOGIN AS"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/stdbutton"
+        android:layout_width="164dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="24dp"
+        android:background="#42A5F5"
+        android:text="STUDENT"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/teacherbtn"
+        android:layout_width="0dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="28dp"
+        android:background="#FFEE58"
+        android:text="Teacher"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/stdbutton"
+        app:layout_constraintStart_toStartOf="@+id/stdbutton"
+        app:layout_constraintTop_toBottomOf="@+id/stdbutton" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/highbutton"
+        android:layout_width="0dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="28dp"
+        android:background="#EF5350"
+        android:text="Higher Authority"
+        android:textColor="#151000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/teacherbtn"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="@+id/teacherbtn"
+        app:layout_constraintTop_toBottomOf="@+id/teacherbtn" />
+</androidx.constraintlayout.widget.ConstraintLayout>
