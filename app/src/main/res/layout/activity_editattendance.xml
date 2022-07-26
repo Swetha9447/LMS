@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFD180"
+    android:hapticFeedbackEnabled="false"
+    tools:context=".editattendance">
+
+    <TextView
+        android:id="@+id/weleg"
+        android:layout_width="278dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="24dp"
+        android:background="#FFF9C4"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingTop="16dp"
+        android:text="EDIT ATTENDANCE"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/egseekbar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="312dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="308dp"
+        android:background="#FFFEFC"
+        android:max="10"
+        android:progress="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weleg" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/egdone"
+        android:layout_width="151dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="120dp"
+        android:background="#F57F17"
+        android:text="CONFIRM"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:iconTint="#F30202"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/egseekbar" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/rnogt"
+        android:layout_width="335dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginBottom="108dp"
+        android:background="#F8EEEE"
+        android:hint="Student's Registration No"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/egseekbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weleg" />
+
+    <TextView
+        android:id="@+id/editgtrn"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="69dp"
+        android:background="#FFEE58"
+        android:paddingTop="5dp"
+        android:text="30%"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/egdone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/egseekbar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
