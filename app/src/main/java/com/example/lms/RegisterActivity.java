@@ -2,6 +2,8 @@ package com.example.lms;
 
 import android.content.Intent;
 import android.graphics.Color;
+import java.util.regex.*;
+import java.util.*;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -12,6 +14,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
+
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,15 +22,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
-import java.util.ArrayList;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 
 public class RegisterActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
-private Spinner spinner;
-String named,emaild,semd,passd,regnod,medissue;
-int f=0,fx=0;
+    private Spinner spinner;
+    String named,emaild,semd,passd,regnod,medissue;
+    int f=0,fx=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,7 +56,7 @@ int f=0,fx=0;
                 TextView name=findViewById(R.id.loginreg);
                 named= name.getText().toString().toLowerCase();
                 TextView email=findViewById(R.id.regNo);
-               emaild= email.getText().toString().toLowerCase();
+                emaild= email.getText().toString().toLowerCase();
                 String regex = "^(.+)@(.+)$";
 
                 Pattern pattern = Pattern.compile(regex);
@@ -73,7 +73,7 @@ int f=0,fx=0;
                     String comp="";
 
                     try {
-                         comp = emaild.substring(first, last+1);
+                        comp = emaild.substring(first, last+1);
                     }
                     catch (Exception e) {
                         Toast.makeText(RegisterActivity.this, "Email Must Ends with @state.gov ", Toast.LENGTH_SHORT).show();
@@ -110,7 +110,7 @@ int f=0,fx=0;
         });
 
 
-         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.issues, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.issues, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(this);
@@ -143,22 +143,22 @@ int f=0,fx=0;
                     Class.forName("com.mysql.jdbc.Driver");
                     Connection con = DriverManager.getConnection(
                             "jdbc:mysql://192.168.0.35:3306/lms", "max", "max123");
-                String insert=("INSERT INTO `registration` (`name`, `email`, `semester`, `regno`, `medical_issue`, `password`) VALUES (?,?,?,?,?,?);");
-                PreparedStatement preparedStmt = con.prepareStatement(insert);
-                preparedStmt.setString (1, named);
-                preparedStmt.setString (2, emaild);
-                preparedStmt.setString   (3, semd);
-                preparedStmt.setString(4, regnod);
-                preparedStmt.setString    (5, medissue);
-                preparedStmt.setString    (6, passd);
-                preparedStmt.execute();
-                con.close();
-                // TOAST DISPLAY
+                    String insert=("INSERT INTO `registration` (`name`, `email`, `semester`, `regno`, `medical_issue`, `password`) VALUES (?,?,?,?,?,?);");
+                    PreparedStatement preparedStmt = con.prepareStatement(insert);
+                    preparedStmt.setString (1, named);
+                    preparedStmt.setString (2, emaild);
+                    preparedStmt.setString   (3, semd);
+                    preparedStmt.setString(4, regnod);
+                    preparedStmt.setString    (5, medissue);
+                    preparedStmt.setString    (6, passd);
+                    preparedStmt.execute();
+                    con.close();
+                    // TOAST DISPLAY
 //                    String text="REGISTERED SUCESSFULLY";
 //                    Toast.makeText(RegisterActivity.this,text , Toast.LENGTH_SHORT).show();
 
                     Log.i("mylog", "Registered Successfully with Database");
-                startActivity(new Intent(RegisterActivity.this,LoginActivity.class ));
+                    startActivity(new Intent(RegisterActivity.this,LoginActivity.class ));
                     fx=2;
                     return "OK";
 
@@ -178,7 +178,7 @@ int f=0,fx=0;
                 return "FAILED TO REGISTER";
 
             }
-            }
+        }
 
         @Override
         protected void onPostExecute(String s) {
@@ -194,5 +194,5 @@ int f=0,fx=0;
             }
         }
     }
-    }
+}
 

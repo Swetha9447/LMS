@@ -20,12 +20,14 @@
         <entry key="..\:/Git Uploads/LMS-Git/LMS/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Git Uploads/LMS-Git/LMS/app/src/main/res/layout/activity_medissue.xml" value="0.1" />
         <entry key="..\:/Git Uploads/LMS-Git/LMS/app/src/main/res/layout/activity_notif.xml" value="0.1" />
+        <entry key="..\:/Git Uploads/LMS-Git/LMS/app/src/main/res/layout/activity_notifyhigher.xml" value="0.1" />
         <entry key="..\:/Git Uploads/LMS-Git/LMS/app/src/main/res/layout/activity_register.xml" value="0.1" />
         <entry key="..\:/Git Uploads/LMS-Git/LMS/app/src/main/res/layout/activity_splashscreen.xml" value="0.1" />
         <entry key="..\:/Git Uploads/LMS-Git/LMS/app/src/main/res/layout/activity_studentsdetails.xml" value="0.1" />
         <entry key="..\:/Git Uploads/LMS-Git/LMS/app/src/main/res/layout/activity_teach_login.xml" value="0.1" />
         <entry key="..\:/Git Uploads/LMS-Git/LMS/app/src/main/res/layout/activity_teacher_dashboard.xml" value="0.1" />
         <entry key="..\:/Git Uploads/LMS-Git/LMS/app/src/main/res/layout/activity_teeacher_reg.xml" value="0.1" />
+        <entry key="..\:/Git Uploads/LMS-Git/LMS/app/src/main/res/layout/activity_uploadassign.xml" value="0.1" />
       </map>
     </option>
   </component>

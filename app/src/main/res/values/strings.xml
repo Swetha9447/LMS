@@ -1,3 +1,23 @@
 <resources>
-    <string name="app_name">LMS</string>
+    <string name="app_name"></string>
+    <string-array name="issues">
+        <item>Medical Issue </item>
+        <item> Prolonged Periods </item>
+        <item> Severe Headaches </item>
+        <item> Anxiety </item>
+        <item> Depression </item>
+        <item> Other </item>
+
+    </string-array>
+    <string name="title_activity_dashboard_s_t_d">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="email">Email:</string>
+    <string name="syed_huzaifa_bukhari">Syed Huzaifa Bukhari</string>
+    <string name="sp20_bse_089">SP20-BSE-089</string>
+    <string name="semester">Semester:</string>
+    <string name="_5th">5th</string>
+    <string name="huzbuk_gmail_com">huzbuk@gmail.com</string>
+
+
 </resources>
